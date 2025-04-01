@@ -1,16 +1,24 @@
-## Hi there 👋
+# Profilo GitHub - Lore09 🚀
 
-<!--
-**Lore09/Lore09** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Ciao, sono Lore09! 👋
+Benvenuto nella mia landing page di GitHub.
 
-Here are some ideas to get you started:
+🔗 **[Visita il mio GitHub](https://github.com/Lore09)**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 📊 Le mie statistiche GitHub
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Lore09&show_icons=true&theme=radical)
+
+![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=Lore09&theme=radical)
+
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lore09&theme=radical)
+
+---
+
+## 📅 Contributi recenti
+
+![GitHub Contributions](https://ghchart.rshah.org/Lore09)
+
+---
