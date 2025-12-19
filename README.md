@@ -72,18 +72,6 @@ Studente di Ingegneria Informatica presso l'Università di Bologna, appassionato
 
 ---
 
-## Grafico delle Attività
-
-<div align="center">
-
-[![Lore09's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Lore09&theme=react-dark&hide_border=true&area=true)](https://github.com/Lore09)
-
-![GitHub Contributions](https://ghchart.rshah.org/409ba5/Lore09)
-
-</div>
-
----
-
 ## Progetti in Evidenza
 
 <div align="center">
