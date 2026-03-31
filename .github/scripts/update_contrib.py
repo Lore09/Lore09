@@ -18,8 +18,6 @@ HEADERS = {
     "Content-Type": "application/json",
 }
 
-# contributionsCollection defaults to the last ~12 months.
-# Increase maxRepositories to cast a wider net before filtering.
 QUERY = """
 query($login: String!) {
   user(login: $login) {
@@ -33,7 +31,6 @@ query($login: String!) {
             name
           }
           isPrivate
-          isFork
         }
         contributions {
           totalCount
@@ -44,34 +41,7 @@ query($login: String!) {
 }
 """
 
-# Map common language names to shields.io logo slugs
-LANG_LOGO = {
-    "Python": "python",
-    "JavaScript": "javascript",
-    "TypeScript": "typescript",
-    "Go": "go",
-    "Rust": "rust",
-    "Java": "openjdk",
-    "C": "c",
-    "C++": "cplusplus",
-    "Shell": "gnubash",
-    "Dockerfile": "docker",
-    "HCL": "terraform",
-}
-
-LANG_COLOR = {
-    "Python": "3776AB",
-    "JavaScript": "F7DF1E",
-    "TypeScript": "3178C6",
-    "Go": "00ADD8",
-    "Rust": "DEA584",
-    "Java": "ED8B00",
-    "C": "00599C",
-    "C++": "00599C",
-    "Shell": "4EAA25",
-    "Dockerfile": "2496ED",
-    "HCL": "7B42BC",
-}
+MEDALS = ["🥇", "🥈", "🥉"]
 
 
 def fetch_contributions():
@@ -94,44 +64,40 @@ def fetch_contributions():
         ]
     )
 
-    # Keep only public repos (forks included — you contribute to OSS too)
     public = [c for c in contribs if not c["repository"]["isPrivate"]]
     public.sort(key=lambda x: x["contributions"]["totalCount"], reverse=True)
     return public[:TOP_N]
 
 
-def shields_escape(text):
-    """Escape text for shields.io badge URL segments."""
-    return text.replace("-", "--").replace("_", "__").replace(" ", "_")
-
-
-def make_badge(entry):
+def make_row(rank, entry):
     repo = entry["repository"]
     count = entry["contributions"]["totalCount"]
-    name = repo["nameWithOwner"].split("/")[-1]
+    name_with_owner = repo["nameWithOwner"]
+    owner, name = name_with_owner.split("/", 1)
     url = repo["url"]
     lang = (repo["primaryLanguage"] or {}).get("name", "")
 
-    logo = LANG_LOGO.get(lang, "github")
-    color = LANG_COLOR.get(lang, "F75C7E")
+    medal = MEDALS[rank] if rank < len(MEDALS) else str(rank + 1)
 
-    label = shields_escape(name)
-    message = shields_escape(f"{count} commits")
+    # Show org/repo if it's not the user's own repo, otherwise just repo name
+    display = f"`{owner}/`**[{name}]({url})**" if owner.lower() != USERNAME.lower() else f"**[{name}]({url})**"
+    lang_str = f"`{lang}`" if lang else ""
 
-    badge_url = (
-        f"https://img.shields.io/badge/{label}-{message}-{color}"
-        f"?style=for-the-badge&logo={logo}&logoColor=white"
-    )
-    return f"[![{name}]({badge_url})]({url})"
+    return f"| {medal} | {display} | {lang_str} | {count} |"
 
 
-def update_readme(badges):
+def build_table(repos):
+    header = "| | Repository | Language | Commits |\n|:---:|:---|:---:|:---:|"
+    rows = [make_row(i, entry) for i, entry in enumerate(repos)]
+    return "\n".join([header] + rows)
+
+
+def update_readme(table):
     readme_path = "README.md"
     with open(readme_path, "r") as f:
         content = f.read()
 
-    inner = "\n".join(badges)
-    replacement = f"<!-- TOP_CONTRIB_START -->\n{inner}\n<!-- TOP_CONTRIB_END -->"
+    replacement = f"<!-- TOP_CONTRIB_START -->\n{table}\n<!-- TOP_CONTRIB_END -->"
 
     new_content, n = re.subn(
         r"<!-- TOP_CONTRIB_START -->.*?<!-- TOP_CONTRIB_END -->",
@@ -147,7 +113,7 @@ def update_readme(badges):
     with open(readme_path, "w") as f:
         f.write(new_content)
 
-    print(f"Updated {n} section(s) with top {len(badges)} repos.")
+    print(f"Updated {n} section(s).")
 
 
 if __name__ == "__main__":
@@ -155,8 +121,8 @@ if __name__ == "__main__":
     if not repos:
         print("No public contributions found, skipping update.")
         sys.exit(0)
-    badges = [make_badge(r) for r in repos]
-    update_readme(badges)
-    for entry in repos:
+    table = build_table(repos)
+    update_readme(table)
+    for i, entry in enumerate(repos):
         r = entry["repository"]
-        print(f"  {r['nameWithOwner']}: {entry['contributions']['totalCount']} commits")
+        print(f"  {MEDALS[i] if i < 3 else i+1} {r['nameWithOwner']}: {entry['contributions']['totalCount']} commits")
