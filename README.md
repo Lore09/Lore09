@@ -93,6 +93,11 @@
 <div align="center">
 
 <!-- TOP_CONTRIB_START -->
+[![Krawl](https://img.shields.io/badge/Krawl-165_commits-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/BlessedRebuS/Krawl)
+[![dashboard](https://img.shields.io/badge/dashboard-143_commits-F75C7E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kentrasecurity/dashboard)
+[![kentra](https://img.shields.io/badge/kentra-103_commits-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://github.com/kentrasecurity/kentra)
+[![helm](https://img.shields.io/badge/helm-54_commits-F75C7E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kentrasecurity/helm)
+[![PELATO](https://img.shields.io/badge/PELATO-20_commits-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/UniBO-PRISMLab/PELATO)
 <!-- TOP_CONTRIB_END -->
 
 </div>
