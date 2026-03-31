@@ -23,6 +23,15 @@
 
 ---
 
+## Top Contributed Repositories
+
+> *Updated daily via GitHub Actions — based on commits in the last 12 months.*
+
+<!-- TOP_CONTRIB_START -->
+<!-- TOP_CONTRIB_END -->
+
+---
+
 ## Certifications
 
 <div align="center">
@@ -81,24 +90,6 @@
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Lore09&layout=compact&theme=radical&hide_border=true&bg_color=0D1117)
 
 ![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Lore09&theme=radical)
-
-</div>
-
----
-
-## Top Contributed Repositories
-
-> *Updated daily via GitHub Actions — based on commits in the last 12 months.*
-
-<div align="center">
-
-<!-- TOP_CONTRIB_START -->
-[![Krawl](https://img.shields.io/badge/Krawl-165_commits-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/BlessedRebuS/Krawl)
-[![dashboard](https://img.shields.io/badge/dashboard-143_commits-F75C7E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kentrasecurity/dashboard)
-[![kentra](https://img.shields.io/badge/kentra-103_commits-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://github.com/kentrasecurity/kentra)
-[![helm](https://img.shields.io/badge/helm-54_commits-F75C7E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kentrasecurity/helm)
-[![PELATO](https://img.shields.io/badge/PELATO-20_commits-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/UniBO-PRISMLab/PELATO)
-<!-- TOP_CONTRIB_END -->
 
 </div>
 
