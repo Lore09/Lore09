@@ -14,19 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
       - name: Install dependencies
-        run: pip install requests
+        run: pip3 install requests
 
       - name: Update contributions
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: Lore09
-        run: python .github/scripts/update_contrib.py
+        run: python3 .github/scripts/update_contrib.py
 
       - name: Commit and push if changed
         run: |
