@@ -34,7 +34,7 @@
 | 🥈 | `kentrasecurity/`**[dashboard](https://github.com/kentrasecurity/dashboard)** | `HTML` | 143 |
 | 🥉 | `kentrasecurity/`**[kentra](https://github.com/kentrasecurity/kentra)** | `Go` | 103 |
 | 4 | `kentrasecurity/`**[helm](https://github.com/kentrasecurity/helm)** | `Go Template` | 54 |
-| 5 | `UniBO-PRISMLab/`**[PELATO](https://github.com/UniBO-PRISMLab/PELATO)** | `Python` | 20 |
+| 5 | `UniBO-PRISMLab/`**[PELATO](https://github.com/UniBO-PRISMLab/PELATO)** | `Python` | 19 |
 <!-- TOP_CONTRIB_END -->
 
 ---
