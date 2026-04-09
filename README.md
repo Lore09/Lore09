@@ -30,7 +30,7 @@
 <!-- TOP_CONTRIB_START -->
 | | Repository | Language | Commits |
 |:---:|:---|:---:|:---:|
-| 🥇 | `BlessedRebuS/`**[Krawl](https://github.com/BlessedRebuS/Krawl)** | `Python` | 165 |
+| 🥇 | `BlessedRebuS/`**[Krawl](https://github.com/BlessedRebuS/Krawl)** | `Python` | 322 |
 | 🥈 | `kentrasecurity/`**[dashboard](https://github.com/kentrasecurity/dashboard)** | `HTML` | 143 |
 | 🥉 | `kentrasecurity/`**[kentra](https://github.com/kentrasecurity/kentra)** | `Go` | 103 |
 | 4 | `kentrasecurity/`**[helm](https://github.com/kentrasecurity/helm)** | `Go Template` | 54 |
