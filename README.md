@@ -32,9 +32,9 @@
 |:---:|:---|:---:|:---:|
 | 🥇 | `BlessedRebuS/`**[Krawl](https://github.com/BlessedRebuS/Krawl)** | `Python` | 448 |
 | 🥈 | `kentrasecurity/`**[dashboard](https://github.com/kentrasecurity/dashboard)** | `HTML` | 143 |
-| 🥉 | `kentrasecurity/`**[kentra](https://github.com/kentrasecurity/kentra)** | `Go` | 103 |
-| 4 | **[pve-rancher-driver](https://github.com/Lore09/pve-rancher-driver)** | `Go` | 86 |
-| 5 | `kentrasecurity/`**[helm](https://github.com/kentrasecurity/helm)** | `Go Template` | 54 |
+| 🥉 | **[pve-rancher-driver](https://github.com/Lore09/pve-rancher-driver)** | `Go` | 109 |
+| 4 | `kentrasecurity/`**[kentra](https://github.com/kentrasecurity/kentra)** | `Go` | 103 |
+| 5 | **[pve-rancher-ui-extension](https://github.com/Lore09/pve-rancher-ui-extension)** | `Vue` | 61 |
 <!-- TOP_CONTRIB_END -->
 
 ---
