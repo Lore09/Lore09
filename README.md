@@ -30,7 +30,7 @@
 <!-- TOP_CONTRIB_START -->
 | | Repository | Language | Commits |
 |:---:|:---|:---:|:---:|
-| 🥇 | `BlessedRebuS/`**[Krawl](https://github.com/BlessedRebuS/Krawl)** | `Python` | 669 |
+| 🥇 | `BlessedRebuS/`**[Krawl](https://github.com/BlessedRebuS/Krawl)** | `Python` | 683 |
 | 🥈 | `kentrasecurity/`**[dashboard](https://github.com/kentrasecurity/dashboard)** | `HTML` | 143 |
 | 🥉 | **[pve-rancher-driver](https://github.com/Lore09/pve-rancher-driver)** | `Go` | 138 |
 | 4 | `kentrasecurity/`**[kentra](https://github.com/kentrasecurity/kentra)** | `Go` | 103 |
